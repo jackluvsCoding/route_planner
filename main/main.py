@@ -1,6 +1,7 @@
 import requests
 
 
+
 def main():
     gcp_response = requests.get(
         base_url,
