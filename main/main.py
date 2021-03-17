@@ -1,14 +1,14 @@
 import requests
-
+import secrets
 
 
 def main():
     gcp_response = requests.get(
-        base_url,
+        secrets.base_url,
         params=[('units', 'imperial'),
                 ('origins', '7700 Sunwood Dr. Nw, Ramsey, MN, USA'),
                 ('destinations', '4308 Village Green Ct., Sioux City, IA, USA'),
-                ('key', api_key)]
+                ('key', secrets.api_key)]
     )
     print(gcp_response.url)
     print('\n')
